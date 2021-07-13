@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Internet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/homePage.css">
+
+</head>
+
+<body>
+    <main class="container ">
+        <nav class="navbar navbar-expand-lg navbar-dark rounded-lg sticky-top ">
+            <a class="navbar-brand" href="#"><img class="zoom" src="images/logo/logo_fast.png" height=40px></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="products()" class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="includes/speedtest.html">SpeedTest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-toggle="modal" data-target="#sendMail" data-whatever="@mdo">Contact us</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="notactive btn btn-outline-success my-2 my-sm-0" type="submit">Search
+                        <span class="notactiveText">Not Active</span>
+
+                    </button>
+                </form>
+            </div>
+        </nav>
+
+
+        <div class="modal fade" id="sendMail" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true" data-whatever="egb.fadi@gmail.com">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ModalLabel">New message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name" value="egb.fadi@gmail.com" disabled="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="notactive btn btn-primary">Send message
+                            <span class="notactiveText">Not Active</span>
+                        </button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg_main mx-auto mt-4 rounded-lg ">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/simon-abrams-k_T9Zj3SE8k-unsplash.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fast ISP Support</h5>
+                            <p>Live help, when you need it Reach out to our team via phone, email, live chat, and social media.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/imgix-klWUhr-wPJ8-unsplash.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fast ISP Data center</h5>
+                            <p>We own and operate data centers around the world to keep our products running 24 hours a day, 7 days a week</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/ISP2.jpeg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fast ISP Fiber Optic Infrastructurer</h5>
+                            <p>Our fiber optic expertise spans tens of thousands of kilometers in nationwide
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="hero  d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h1 class="text-white display-1 mb-0">FAST ISP</h1>
+                    <h2 class="text-secondary display-4 mt-0">Speed Security And avilablity</h2>
+                </div>
+            </div>
+
+
+            <div class="row info">
+                <div class="col-sm-6 my-4">
+                    <h4>Enterprise Security</h4>
+                    <p>Explore financial impacts and
+                        cybersecurity measures that can help your organization mitigate
+                        costs with insights from the 2020 Cost of a Data Breach Report.</p>
+                </div>
+                <div class="col-sm-6 my-4">
+                    <h4>Storage Solution</h4>
+                    <p>Transform and enhance your
+                        business with a comprehensive storage solution
+                        that integrates and refreshes your existing IT infrastructure,
+                        while reducing costs.</p>
+                </div>
+                <div class="col-sm-6 my-4">
+                    <h4>Fast Internet</h4>
+                    <p">The speed you need at a price you’ll love</p>
+                </div>
+                <div class="col-sm-6 my-4">
+                    <h4>Watch TV the way you’ve always wanted.</h4>
+                    <p">Now get unlimited hours of Cloud DVR recordings. Watch at home or on the go</p>
+                </div>
+            </div>
+
+            <div id="products" class="marketing mb-3 mx-auto rounded-lg">
+                <div class="row my-3">
+                    <div class="col-lg-4 rounded ">
+                        <a onclick="internetPlans()" href="#internetPlans">
+                            <p>
+                                <img class="zoom " width="140" height="120" src="images/logo/logo_fast.png">
+                            </p>
+                            <h2 class="btn btn-secondary">Internet Plans</h2>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a onclick="tvPlans()" href="#tvPlans">
+                            <p>
+                                <img class=" zoom rounded-circle" width="120" height="120" src="images/tv_channels.jpg">
+                            </p>
+                            <h2 class="btn btn-secondary">TV Plans</h2>
+                        </a>
+                    </div>
+                    <div class=" col-lg-4">
+                        <a onclick="accessories()" href="#accessories">
+                            <p>
+                                <img class="zoom rounded-circle" width="120" height="120" src="images/accesse.jpg">
+                            </p>
+                            <h2 class="btn btn-secondary">Accessories </h2>
+                        </a>
+                    </div>
+                </div>
+                <div class=" plans">
+                    <div id="internetPlans" class=" text-center products mx-auto align-items-center justify-content-center">
+                        <h4 class="p-2 bg-info text-white">Fast Internet Plans</h4>
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal">50 Mbps</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">&#8362;80 <small class="text-muted">/ mo</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li>Download speed 50 mbps</li>
+                                        <li>Upload speed 2 mbps</li>
+                                    </ul>
+                                    <button onclick="purchase('Fast Internet',80,'50 Mbps')" type="button" class="btn btn-lg btn-block btn-outline-primary">Checkout</button>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal">100 Mbps</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">&#8362;100 <small class="text-muted">/ mo</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li>Download speed 100 mbps</li>
+                                        <li>Upload speed 5 mbps</li>
+                                    </ul>
+                                    <button onclick="purchase('Fast Internet',100,'100 Mbps')" type="button" class="btn btn-lg btn-block btn-outline-primary">Checkout</button>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal">200 Mbps</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">&#8362;150 <small class="text-muted">/ mo</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li>Download speed 200 mbps</li>
+                                        <li>Upload speed 10 mbps</li>
+                                    </ul>
+                                    <button onclick="purchase('Fast Internet',150,'200 Mbps')" type="button" class="btn btn-lg btn-block btn-outline-primary">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tvPlans" class=" text-center products mx-auto align-items-center justify-content-center">
+                        <h4 class="p-2 bg-info text-white">TV Plans</h4>
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal">Your Fast TV</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">&#8362;60 <small class="text-muted">/ mo</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li><img width="120" height="120" src="images/tv_channels.jpg"></li>
+                                        <li>Explore 125+ channels</li>
+                                        <li>Get our basic</li>
+                                        <li>popular channels </li>
+                                    </ul>
+                                    <button onclick="purchase('Your Fast TV',60,'125+ channels')" type="button" class="btn btn-lg btn-block btn-outline-primary">Checkout</button>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal">More Fast TV</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">&#8362;90 <small class="text-muted">/ mo</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li><img width="120" height="120" src="images/nflex.jpg"></li>
+                                        <li>300+ channels</li>
+                                        <li>Get our most popular channels plus regional sports.</li>
+                                    </ul>
+                                    <button onclick="purchase('More Fast TV',90,'300+ channels')" type="button" class="btn btn-lg btn-block btn-outline-primary">Checkout</button>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal">The Most Fast TV</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">&#8362;120 <small class="text-muted">/ mo</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li><img width="120" height="120" src="images/tv_2.jpg"></li>
+                                        <li>425+ channels</li>
+                                        <li>The best sports and movie channels</li>
+                                    </ul>
+                                    <button onclick="purchase('The Most Fast TV',120,'425+ channels')" ype="button" class="btn btn-lg btn-block btn-outline-primary">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="accessories" class=" text-center products mx-auto align-items-center justify-content-center">
+                        <h4 class="text-center p-2 mb-2 bg-info text-white">Accessories</h4>
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal">Fast Access point</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">&#8362;10 <small class="text-muted">/ mo</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li><img width="120" height="120" src="images/wifi.jpg"></li>
+                                        <li>Up to 1Gbps WiFi</li>
+                                    </ul>
+                                    <button onclick="purchase('Fast Access point',10,'Up to 1Gbps WiFi')" type="button" class="btn btn-lg btn-block btn-outline-primary">Checkout</button>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal">Fast Cameras</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">&#8362;30<small class="text-muted">/ mo</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li><img width="120" height="120" src="images/cam.jpg"></li>
+                                        <li>4 X 4K Cameras</li>
+                                    </ul>
+                                    <button onclick="purchase('Fast Cameras',30,'4 X 4K Cameras')" type="button" class="btn btn-lg btn-block btn-outline-primary">Checkout</button>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal">Fast Security</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">&#8362;120 <small class="text-muted">/ mo</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li><img width="120" height="120" src="images/cyber.jpg"></li>
+                                        <li>Secure your Fast Internet</li>
+                                    </ul>
+                                    <button onclick="purchase('Fast Security',120,'Secure your Fast Internet')" type="button" class="btn btn-lg btn-block btn-outline-primary">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <hr class="mt-5">
+
+            <div class="row text-center">
+                <div class="col-sm-4">All rights reserved &#174;</div>
+                <div class="col-sm-1">|</div>
+                <div class="col-sm-3 ">egb.fadi@gmail.com </div>
+                <div class="col-sm-1 ">|</div>
+                <div class="col-sm-3 ">Fast ISP website</div>
+
+            </div>
+        </footer>
+
+    </main>
+    <script src="js/isp.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

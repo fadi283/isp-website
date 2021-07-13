@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fast Products</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../css/purchase.css">
+</head>
+
+<body onload="checkProduct()">
+
+    <main class="container">
+        <div class="align-items-center justify-content-center">
+            <div class="text-center">
+                <a href="../index.html"><img src="../images/logo/logo_fast.png"></a>
+                <h4 id="productName" class="mb-3 ">Purchase</h4>
+            </div>
+            <form onsubmit="setAction(this)">
+                <div class="padding">
+                    <div class="justify-content-center row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Credit Card</strong>
+                                    <small>enter your card details</small>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="name">Name</label>
+                                                <input class="form-control" id="name" type="text" placeholder="Enter your name" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="ccnumber">Credit Card Number</label>
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" placeholder="0000 0000 0000 0000" autocomplete="email" required>
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">
+                                                            <i class="mdi mdi-credit-card"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-sm-4">
+                                            <label for="ccmonth">Month</label>
+                                            <select class="form-control" id="ccmonth" required>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label for="ccyear">Year</label>
+                                            <select class="form-control" id="ccyear" required>
+                                                <option>2014</option>
+                                                <option>2015</option>
+                                                <option>2016</option>
+                                                <option>2017</option>
+                                                <option>2018</option>
+                                                <option>2019</option>
+                                                <option>2020</option>
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                                <option>2023</option>
+                                                <option>2024</option>
+                                                <option>2025</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label for="cvv">CVV/CVC</label>
+                                                <input class="form-control" id="cvv" type="text" placeholder="123" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="form-group">
+                                                    <label for="price">Price<small class="text-muted"> &#8362;/ mo</small></label>
+                                                    <input class="form-control" id="price" type="text" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="form-group">
+                                                    <label for="description">Product</label>
+                                                    <input class="form-control" id="description" type="text" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-sm btn-success float-right" type="submit">
+                                        <i class="mdi mdi-gamepad-circle"></i> Continue</button>
+                                    <button class="btn btn-sm btn-danger" type="reset">
+                                        <i class="mdi mdi-lock-reset"></i> Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </main>
+</body>
+<pre>
+        <script src="../js/purchase.js"> </script>
+    </pre>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</html>

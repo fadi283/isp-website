@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Speed test</title>
+    <link rel="stylesheet" type="text/css" href="../css/speedtest.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="internalWrapper">
+            <header class="center">
+                <h1>Internet Speed Test</h1>
+                <a href="../index.html"><img id="logo" src="../images/logo/logo_fast.png" />
+                </a>
+            </header>
+
+            <div class="speedtest">
+                <div>
+                    <div>
+                        <div>
+                            <iframe src="https://www.metercustom.net/plugin/?hl=en&th=w">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <label class="center">Your IP address:
+                <h1 id="IP"></h1>
+            </label>
+
+        </div>
+    </div>
+
+    <script>
+        function getIP(json) {
+            document.getElementById("IP").innerHTML = json.ip;
+        }
+    </script>
+
+
+    // as seperate script tag
+    <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"> </script>
+
+
+</body>
+
+</html>

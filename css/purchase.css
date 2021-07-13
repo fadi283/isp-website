@@ -1,0 +1,36 @@
+* {
+    font-family: 'sans-serif';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+    background-image:
+        linear-gradient(rgba(255, 255, 255), rgba(255, 255, 255, 50%)),
+        url("../images/waves-blue-gradient-background-stock-1920x1080-1166.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 3%;
+    font-family: 'Open Sans';
+}
+
+
+
+img {
+    width: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    span {
+        display: none;
+    }
+
+}
